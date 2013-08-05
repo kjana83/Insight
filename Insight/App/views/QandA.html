@@ -1,0 +1,24 @@
+﻿<div data-bind="foreach: questions">
+    <div class="form-group">
+        <label data-bind="text: $data.Question"></label>
+        <div data-bind="visible: $data.AnswerType == 0">
+            <div class="radio">
+                <label>
+                    <input type="radio" data-bind="checked: $data.Answer" id="Radio3" value="Yes" checked>
+                    Yes
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" data-bind="checked: $data.Answer" id="Radio4" value="No">
+                    No
+                </label>
+            </div>
+        </div>
+        <div data-bind="visible: $data.AnswerType == 1">
+            <textarea class="form-control" rows="3" data-bind="value: $data.Answer" />
+        </div>
+    </div>
+</div>
+
+<input class="btn btn-default" type="submit" value="Submit" data-bind="click: PostAnswers">
