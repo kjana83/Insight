@@ -5,13 +5,17 @@ define(function (require) {
        system = require('durandal/system'),
        app = require('durandal/app');
 
-    var questions = {
-        Question: "Does the biological research involves any biological materials to animals1?",
-        Answer: ko.observable().extend({ required: {Message:'Answer is required'} }),
-        QuestionCode: "QEST01"
-    };
+    var questions =
+        {
+            QuestionCode1: 'QTS01',
+            Answer1: ko.observable().extend({ required: true }),
+            QuestionCode2: 'QTS02',
+            Answer2: ko.observable().extend({ required: true })
 
+        }
+        
     questions.errors = ko.validation.group(questions);
+
     return {
         questions: questions
     }

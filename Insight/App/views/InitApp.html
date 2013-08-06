@@ -1,19 +1,32 @@
 ﻿<div class="form-group">
-    <label data-bind="text: questions.Question"></label>
+    <label>Does the biological research involves any biological materials to animals?</label>
     <div>
         <div class="radio">
             <label>
-                <input type="radio" data-bind="checked: questions.Answer, attr: { name: questions.QuestionCode }" id="Radio3" value="Yes" checked>
+                <input type="radio" data-bind="checked: questions.Answer1, attr: { name: questions.QuestionCode1 }" id="Radio3" value="Yes" checked>
                 Yes
             </label>
         </div>
         <div class="radio">
             <label>
-                <input type="radio" data-bind="checked: questions.Answer, attr: { name: questions.QuestionCode }" id="Radio4" value="No">
+                <input type="radio" data-bind="checked: questions.Answer1, attr: { name: questions.QuestionCode1 }" id="Radio4" value="No">
                 No
             </label>
         </div>
     </div>
-    <h1 data-bind="text: questions.errors().length"></h1>
-    <p data-bind="text:questions.Answer.validationMessage"></p>
+     <label>Does the biological involve the use of existing human embryonic stem cells(hESCs), deriving new hESCs, or using human induced Pluripotent Stem Cells(IPScs)?</label>
+    <div>
+        <div class="radio">
+            <label>
+                <input type="radio" data-bind="checked: questions.Answer2, attr: { name: questions.QuestionCode2 }" id="Radio1" value="Yes" checked>
+                Yes
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" data-bind="checked: questions.Answer2, attr: { name: questions.QuestionCode2 }" id="Radio2" value="No">
+                No
+            </label>
+        </div>
+    </div>
 </div>
