@@ -4,13 +4,13 @@
         <div data-bind="visible: $data.AnswerType == 0">
             <div class="radio">
                 <label>
-                    <input type="radio" data-bind="checked: $data.Answer" id="Radio3" value="Yes" checked>
+                    <input type="radio" data-bind="checked: $data.Answer, attr: { name: $data.QuestionCode }"  id="Radio3" value="Yes" checked>
                     Yes
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" data-bind="checked: $data.Answer" id="Radio4" value="No">
+                    <input type="radio" data-bind="checked: $data.Answer, attr: { name: $data.QuestionCode }" id="Radio4" value="No">
                     No
                 </label>
             </div>
@@ -19,6 +19,6 @@
             <textarea class="form-control" rows="3" data-bind="value: $data.Answer" />
         </div>
     </div>
+    <h1 data-bind="text: $data."></h1>
 </div>
-
 <input class="btn btn-default" type="submit" value="Submit" data-bind="click: PostAnswers">

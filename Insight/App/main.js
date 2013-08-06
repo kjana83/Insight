@@ -17,6 +17,7 @@ define(function (require) {
         router.useConvention();
         router.mapNav('home');
         router.mapNav('QandA/:qtypeid');
+        router.mapNav('InitApp');
         app.setRoot('viewmodels/shell', 'entrance');
     });
 });

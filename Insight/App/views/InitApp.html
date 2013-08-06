@@ -1,0 +1,19 @@
+﻿<div class="form-group">
+    <label data-bind="text: questions.Question"></label>
+    <div>
+        <div class="radio">
+            <label>
+                <input type="radio" data-bind="checked: questions.Answer, attr: { name: questions.QuestionCode }" id="Radio3" value="Yes" checked>
+                Yes
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" data-bind="checked: questions.Answer, attr: { name: questions.QuestionCode }" id="Radio4" value="No">
+                No
+            </label>
+        </div>
+    </div>
+    <h1 data-bind="text: questions.errors().length"></h1>
+    <p data-bind="text:questions.Answer.validationMessage"></p>
+</div>
