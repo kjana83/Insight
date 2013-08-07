@@ -184,6 +184,7 @@
     <Content Include="Content\fancybox_sprite.png" />
     <Content Include="Content\images\accuscope.jpg" />
     <Content Include="Content\images\bg.png" />
+    <Content Include="Content\images\crossmark.jpg" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\LiquidPeraceticAcid.jpg" />
@@ -191,6 +192,7 @@
     <Content Include="Content\images\omron-bp.jpg" />
     <Content Include="Content\images\StorageJar.jpg" />
     <Content Include="Content\images\thermometer.jpg" />
+    <Content Include="Content\images\tickmark.jpg" />
     <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\metro-bootstrap.css" />
     <Content Include="Content\style.css" />

@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-lg-3">
             <div class="list-group">
-                <a href="#InitApp" class="list-group-item">Initial Application<span class="valid" data-bind="text: valid.isInitAppValid()"></span></a>
+                <a href="#InitApp" class="list-group-item" data-bind="css: { valid: valid.isInitAppValid()=='Valid',invalid:valid.isInitAppValid()=='Invalid'}">Initial Application</a>
                 <a href="#" class="list-group-item">Laboratory Initial Application</a>
                 <a href="#" class="list-group-item">Detailed Research Plan</a>
                 <a href="" class="list-group-item">Work Location</a>
